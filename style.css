@@ -1,31 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week4-responsive</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+:root{
+    --branding-color: #6c63ff;
+    --heading-font-family: 'Playfair Display', serif;
+    --default-font-family: 'Poppins', sans-serif;
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/e46ebeea25.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+}
 
-</head>
-<body>
-  <div class="hero">
-   <p>Hello I'm</p>
-   <h1>Mahsa Manafpour</h1>
-   <h2 class="mb-5">Front-end developer based in Iran</h2>
-   <div>
-       <a href="#" class="btn btn-branding">Contact me</a>
-</div>
-  </div>
-</body>
-</html>
+.hero{
+    text-align: center;
+    background: #f9f7fe;
+    padding: 160px 20px;
+
+}
+
+h1,h2{
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+    color: black;
+}
+
+h1{
+    font-size: 96px ;
+}
+
+p{
+    font-family: var(--default-font-family);
+    font-weight: regular;
+}
+
+.hero p{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #272142;
+}
+
+.hero h2{
+    font-family: var(--default-font-family);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 2;
+}
+
+.btn-branding{
+    background: var(--branding-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+})
